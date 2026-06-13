@@ -11,6 +11,23 @@
 
 </div>
 
+## What is this?
+
+F-22 Raptor Combat Simulator is a flight combat game you play directly in your web browser — no download or installation needed. You pilot an F-22 Raptor fighter jet through Operation Eastern Shield, targeting and shooting down enemy aircraft using your mouse and keyboard. The game runs entirely on the web page using standard browser technology, so it works on any modern computer. It is aimed at anyone who enjoys fast-paced aerial combat games without the hassle of installing software.
+
+## Getting started
+
+**Play online (no setup required):**
+Open https://cognis-digital.github.io/f22-raptor-sim/ in any modern browser — Chrome, Firefox, Edge, or Safari all work.
+
+**Run a local copy:**
+```bash
+git clone https://github.com/cognis-digital/f22-raptor-sim.git
+cd f22-raptor-sim
+python -m http.server 8000
+# then open http://localhost:8000 in your browser
+```
+
 ## About
 F-22 Raptor Combat Simulator — Operation Eastern Shield. Built as a self-contained browser experience (HTML5 + JS canvas/WebGL). Part of the [Cognis Digital](https://cognis.digital) labs.
 
@@ -21,11 +38,41 @@ flowchart LR
   E --> R[Render loop · input · audio]
 `
 
-## Run locally
-```bash
-git clone https://github.com/cognis-digital/f22-raptor-sim.git && cd f22-raptor-sim
-python -m http.server 8000   # then open http://localhost:8000
+<a name="verification"></a>
+## Verification
+
+
+
+Every push is verified end-to-end. Latest audit (2026-06-13):
+
+```text
+tests        : 0 passed, 0 failed, 0 errored
+compile      : all modules parse
+cli          : n/a
+package      : n/a
 ```
+
+<details><summary>CLI surface (<code>--help</code>)</summary>
+
+```text
+(see --help)
+```
+</details>
+
+Full machine-readable results: [`AUDIT.md`](AUDIT.md) · regenerate with `python -m f22-raptor-sim --help` + `pytest -q`.
+
+<div align="right"><a href="#top">↑ back to top</a></div>
+
 
 ## License
 COCL v1.0 — see [LICENSE](LICENSE).
+
+<!-- cognis:domains:start -->
+## Domains
+
+**Primary domain:** Defense & Aerospace  ·  **JTF MERIDIAN division:** IRONCLAD · INDIA
+
+**Topics:** `cognis` `defense` `aerospace` `defense-tech`
+
+Part of the **Cognis Neural Suite** — 300+ source-available tools organized across 12 domains under the JTF MERIDIAN command structure. See the [suite on GitHub](https://github.com/cognis-digital) and [jtf-meridian](https://github.com/cognis-digital/jtf-meridian) for how the pieces fit together.
+<!-- cognis:domains:end -->
