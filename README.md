@@ -11,6 +11,23 @@
 
 </div>
 
+## What is this?
+
+F-22 Raptor Combat Simulator is a flight combat game you play directly in your web browser — no download or installation needed. You pilot an F-22 Raptor fighter jet through Operation Eastern Shield, targeting and shooting down enemy aircraft using your mouse and keyboard. The game runs entirely on the web page using standard browser technology, so it works on any modern computer. It is aimed at anyone who enjoys fast-paced aerial combat games without the hassle of installing software.
+
+## Getting started
+
+**Play online (no setup required):**
+Open https://cognis-digital.github.io/f22-raptor-sim/ in any modern browser — Chrome, Firefox, Edge, or Safari all work.
+
+**Run a local copy:**
+```bash
+git clone https://github.com/cognis-digital/f22-raptor-sim.git
+cd f22-raptor-sim
+python -m http.server 8000
+# then open http://localhost:8000 in your browser
+```
+
 ## About
 F-22 Raptor Combat Simulator — Operation Eastern Shield. Built as a self-contained browser experience (HTML5 + JS canvas/WebGL). Part of the [Cognis Digital](https://cognis.digital) labs.
 
@@ -20,12 +37,6 @@ flowchart LR
   B --> E[HTML5 + JS engine]
   E --> R[Render loop · input · audio]
 `
-
-## Run locally
-```bash
-git clone https://github.com/cognis-digital/f22-raptor-sim.git && cd f22-raptor-sim
-python -m http.server 8000   # then open http://localhost:8000
-```
 
 <a name="verification"></a>
 ## Verification
