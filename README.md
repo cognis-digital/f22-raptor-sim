@@ -11,6 +11,41 @@
 
 </div>
 
+
+<!-- cognis:example:start -->
+## 🔎 Example output
+
+**Sample result format** _(illustrative values — run on your own data for real findings):_
+
+```
+{
+  "mission": {
+    "type": "CAP",
+    "start_time": "2023-02-16T14:30:00Z",
+    "end_time": "2023-02-16T15:00:00Z"
+  },
+  "aircraft": {
+    "id": "F22-12345",
+    "callsign": "Raptor-1",
+    "altitude": 30000,
+    "heading": 270.5,
+    "speed": 450
+  },
+  "targets": [
+    {
+      "id": "TGT-001",
+      "type": "UAV",
+      "latitude": 37.7749,
+      "longitude": -122.4194,
+      "altitude": 5000,
+      "range": 10000
+    }
+  ]
+}
+```
+
+<!-- cognis:example:end -->
+
 ## Usage — step by step
 
 1. Play instantly in any modern browser — no install: <https://cognis-digital.github.io/f22-raptor-sim/>
